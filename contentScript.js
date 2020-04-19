@@ -27,7 +27,7 @@ const yandexSelectors = [
     '.container__heap',
     '.stream-promo-popup',
     '.rows__row_last',
-    '.desk-notif-card__card:not([aria-label="Авторизация"])',
+    '.desk-notif-card__card:not([data-card-order="0"]):not([aria-label="Авторизация"])',
 ];
 
 
