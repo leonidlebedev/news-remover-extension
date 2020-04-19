@@ -1,0 +1,17 @@
+{
+  "name": "News Remover",
+  "version": "1.0",
+  "permissions": ["declarativeContent", "content_scripts"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.ru/*", "https://yandex.ru/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "manifest_version": 2
+}
